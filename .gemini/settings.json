@@ -1,0 +1,22 @@
+{
+  "project_name": "NixFlakesForGoGenmediaMCPServers",
+  "description": "A Nix project for creating derivation and flake for Go Genmedia MCP servers.",
+  "model_settings": {
+    "provider": "google",
+    "model": "gemini-2.5-pro",
+    "temperature": 0.8
+  },
+  "file_paths": {
+    "source_dir": "./",
+    "output_dir": "./",
+    "test_dir": "./"
+  },
+  "commands": {
+    "format_code": "nixpkgs-fmt .",
+    "build_flake": "nix build .#"
+  },
+  "ignored_files": [
+    "result*",
+    ".DS_Store"
+  ]
+}
